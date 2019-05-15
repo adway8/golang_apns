@@ -13,7 +13,7 @@ func main() {
 	cert, err := tls.LoadX509KeyPair("apns_cer.pem",
 		"apns_key_noenc.pem")
 
-	//cert, err := certificate.FromPemFile("/Users/qiang/Downloads/app/pemdev/apns_cer.pem", "")
+	//cert, err := certificate.FromPemFile("apns_cer.pem", "123123")
 
 	if err != nil {
 		log.Fatal("Cert Error:", err)
